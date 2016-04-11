@@ -181,7 +181,7 @@ Just like MySQL, you can deploy TicketMonster to JBoss EAP, making use of a 'rea
 . Install the PostgreSQL JBDC driver as a new JBoss module.
 .. Define a new JBoss module named `org.postgresql` under the `modules` directory of the JBoss EAP installation. Under the `modules/system/layers/base` directory structure, create a directory named `org`, containing sub-directory named `postgresql`, containing a sub-directory named `main`. Place the PostgreSQL JBDC driver in the `main` directory. Finally, define the module via a `module.xml` file with the following contents:
 +
-.EAP_HOME/system/layers/base/com/mysql/main/module.xml
+.EAP_HOME/system/layers/base/org/postgresql/main/module.xml
 ----
 <module xmlns="urn:jboss:module:1.0" name="org.postgresql">
    <resources>
